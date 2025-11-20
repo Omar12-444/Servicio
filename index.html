@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seguridad Vecinal</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuente Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .card-hover {
+            transition: transform 0.2s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- ========================================= -->
+    <!-- ENCABEZADO (HEADER) -->
+    <!-- ========================================= -->
+    <header class="bg-blue-600 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-center">
+            <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+                <h1 class="text-2xl md:text-3xl font-bold tracking-tight">Seguridad Vecinal</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 max-w-4xl space-y-12">
+
+        <!-- Texto Introductorio -->
+        <section class="text-center">
+            <p class="text-slate-600 text-lg">
+                Información oficial, alertas y eventos para mantener nuestra comunidad segura.
+            </p>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- 1. SECCIÓN DE EMERGENCIAS (NÚMEROS ACTUALIZADOS) -->
+        <!-- ========================================= -->
+        <section>
+            <div class="flex items-center gap-2 mb-4 px-2">
+                <div class="h-6 w-1.5 bg-red-500 rounded-full"></div>
+                <h2 class="text-xl font-bold text-slate-800 uppercase tracking-wide">Emergencias</h2>
+            </div>
+            
+            <!-- Cuadrícula de botones: 3 columnas -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                
+                <!-- Botón 1: Policía -->
+                <a href="tel:3214612525" class="card-hover flex flex-col items-center p-4 rounded-xl border-2 bg-blue-100 text-blue-800 border-blue-200 cursor-pointer">
+                    <svg class="w-8 h-8 mb-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+                    <span class="font-bold">Policía</span>
+                    <span class="text-base font-black tracking-wider mt-1">321 461 2525</span>
+                </a>
+
+                <!-- Botón 2: Bomberos -->
+                <a href="tel:3204279107" class="card-hover flex flex-col items-center p-4 rounded-xl border-2 bg-red-100 text-red-800 border-red-200 cursor-pointer">
+                    <svg class="w-8 h-8 mb-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-3-.928.857-1.928.857-3 3 0 1.07-.5 1.71-1 3a2.5 2.5 0 0 0 2.5 2.5z"/><path d="M15.5 14.5A2.5 2.5 0 0 0 18 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-3-.928.857-1.928.857-3 3 0 1.07-.5 1.71-1 3a2.5 2.5 0 0 0 2.5 2.5z"/><line x1="12" x2="12" y1="12" y2="12.01"/></svg>
+                    <span class="font-bold">Bomberos</span>
+                    <div class="text-center mt-1">
+                        <div class="text-base font-black tracking-wider">320 427 9107</div>
+                        <div class="text-sm font-medium mt-1">320 919 3755</div>
+                    </div>
+                </a>
+
+                <!-- Botón 3: Ambulancia -->
+                <a href="tel:3142194951" class="card-hover flex flex-col items-center p-4 rounded-xl border-2 bg-green-100 text-green-800 border-green-200 cursor-pointer">
+                    <svg class="w-8 h-8 mb-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                    <span class="font-bold">Ambulancia</span>
+                    <span class="text-base font-black tracking-wider mt-1">314 219 4951</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- 2. AVISOS COMUNITARIOS -->
+        <!-- ========================================= -->
+        <section>
+            <div class="flex items-center gap-2 mb-4 px-2">
+                <div class="h-6 w-1.5 bg-blue-500 rounded-full"></div>
+                <h2 class="text-xl font-bold text-slate-800 uppercase tracking-wide">Avisos Comunitarios</h2>
+            </div>
+
+            <!-- Aviso fijo (siempre visible) -->
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4 rounded-r-lg">
+                <p class="text-slate-700 italic">
+                    Este espacio es para dar información sobre actividades sospechosas en el barrio y compartir eventos comunitarios o municipales.
+                </p>
+            </div>
+
+            <!-- Formulario para escribir -->
+            <div class="bg-white rounded-2xl shadow-md border border-slate-200 p-4 mb-4">
+                <textarea id="mensajeInput" placeholder="Escribe tu aviso..." class="w-full p-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" rows="3"></textarea>
+                <button onclick="publicarMensaje()" class="mt-2 px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">
+                    Publicar aviso
+                </button>
+            </div>
+
+            <!-- Lista de avisos publicados -->
+            <div id="foroMensajes" class="space-y-3">
+                <!-- Los avisos aparecerán aquí -->
+            </div>
+        </section>
+
+        <!-- ========================================= -->
+        <!-- 3. CONSEJOS PREVENTIVOS -->
+        <!-- ========================================= -->
+        <section class="pb-8">
+            <div class="flex items-center gap-2 mb-4 px-2">
+                <div class="h-6 w-1.5 bg-green-500 rounded-full"></div>
+                <h2 class="text-xl font-bold text-slate-800 uppercase tracking-wide">Prevención</h2>
+            </div>
+
+            <div class="bg-green-50 rounded-2xl p-6 border border-green-100">
+                <ul class="grid gap-3 md:grid-cols-2">
+                    <li class="flex items-start gap-3 bg-white p-3 rounded-lg shadow-sm border border-green-100">
+                        <span class="text-green-500 font-bold">✓</span>
+                        <span class="text-slate-700 text-sm">Cierra bien puertas y ventanas al salir.</span>
+                    </li>
+                    <li class="flex items-start gap-3 bg-white p-3 rounded-lg shadow-sm border border-green-100">
+                        <span class="text-green-500 font-bold">✓</span>
+                        <span class="text-slate-700 text-sm">Mantén iluminada la entrada de tu casa.</span>
+                    </li>
+                    <li class="flex items-start gap-3 bg-white p-3 rounded-lg shadow-sm border border-green-100">
+                        <span class="text-green-500 font-bold">✓</span>
+                        <span class="text-slate-700 text-sm">Conoce a tus vecinos, la unión hace la fuerza.</span>
+                    </li>
+                    <li class="flex items-start gap-3 bg-white p-3 rounded-lg shadow-sm border border-green-100">
+                        <span class="text-green-500 font-bold">✓</span>
+                        <span class="text-slate-700 text-sm">No publiques ausencias largas en redes sociales.</span>
+                    </li>
+                    <li class="flex items-start gap-3 bg-white p-3 rounded-lg shadow-sm border border-green-100">
+                        <span class="text-green-500 font-bold">✓</span>
+                        <span class="text-slate-700 text-sm">Ten a mano un kit de primeros auxilios.</span>
+                    </li>
+                    <li class="flex items-start gap-3 bg-white p-3 rounded-lg shadow-sm border border-green-100">
+                        <span class="text-green-500 font-bold">✓</span>
+                        <span class="text-slate-700 text-sm">Reporta cualquier actividad sospechosa.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Script del foro comunitario -->
+    <script>
+        function publicarMensaje() {
+            const input = document.getElementById('mensajeInput');
+            const mensaje = input.value.trim();
+            if (!mensaje) {
+                alert('Por favor, escribe un aviso.');
+                return;
+            }
+
+            const contenedor = document.getElementById('foroMensajes');
+
+            const ahora = new Date();
+            const hora = ahora.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            const fecha = ahora.toLocaleDateString();
+
+            const mensajeHTML = `
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 shadow-sm">
+                    <div class="text-xs text-slate-500 mb-1">${fecha} a las ${hora}</div>
+                    <p class="text-slate-800">${mensaje}</p>
+                </div>
+            `;
+            contenedor.insertAdjacentHTML('beforeend', mensajeHTML);
+            input.value = '';
+        }
+    </script>
+
+</body>
+</html>
